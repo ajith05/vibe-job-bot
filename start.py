@@ -5,6 +5,10 @@ This script validates configuration and starts the bot.
 """
 import sys
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def check_environment():
     """Check if required environment variables are set."""
