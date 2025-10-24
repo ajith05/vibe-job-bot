@@ -20,7 +20,7 @@ class JobBot(commands.Bot):
         super().__init__(
             command_prefix='!job ',
             intents=intents,
-            help_command=commands.DefaultHelpCommand()
+            help_command=None
         )
         
         self.job_crawler = JobCrawler()
